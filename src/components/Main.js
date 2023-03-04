@@ -1,39 +1,28 @@
 import React from "react";
 import styled, {keyframes} from "styled-components";
 import logo from "./img/npcLogo.png";
-import line from "./img/vector.png";
+import line from "./img/Vector 1.png"
+import "./css/useScrollFadeIn.css";
+import logoAni from"./img/logo_ani.webp";
 
-const TextFadeIn = keyframes`
-0% {
-  opacity: 0;
-  transform: translate3d(0, 100%, 0);
-}
-to {
-  opacity: 1;
-  transform: translateZ(0);
-}
-`
-const TextAniDiv = styled.div`
-  animation: ${TextFadeIn} 1.5s linear;
-`
 const ImageDiv = styled.img`
 @media (max-width: 749px)
   {
     margin: auto;
-    width: 235px;
-    height: 120px; 
+    width: 100%;
+    height: 200px; 
     margin-top: 282px;
   }
   @media (min-width: 750px) and (max-width: 1199px)
   {
-    width: 337px;
-    height: 172px;
+    width: 100%;
+    height: 300px;
     margin-top: 417px;
   }
   @media (min-width: 1200px) and (max-width: 1920px)
   {
-    width: 356px;
-    height: 182px;
+    width: 100%;
+    height: 450px;
     margin-top: 289px;
   }
 `;
@@ -385,6 +374,7 @@ const LineDetail = styled.div`
   position:relative;
   float: left;
   display:inline;
+  z-index: 1;
 `;
 const CircleDiv2_1 = styled.div`
 @media (max-width: 749px){
@@ -406,6 +396,7 @@ const CircleDiv2_1 = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content : center;
   align-items : center;
+  z-index: 2;
 } 
 @media (min-width: 750px) and (max-width: 1199px){
   display:flex;
@@ -426,6 +417,7 @@ const CircleDiv2_1 = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content : center;
   align-items : center;
+  z-index: 2;
 } 
 @media (min-width: 1200px) and (max-width: 1920px){
   display:flex;
@@ -446,6 +438,7 @@ const CircleDiv2_1 = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content : center;
   align-items : center;
+  z-index: 2;
 } 
 `;
 const CircleDiv2_2 = styled.div`
@@ -468,9 +461,11 @@ const CircleDiv2_2 = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content : center;
   align-items : center;
+  z-index: 2;
 } 
 @media (min-width: 750px) and (max-width: 1199px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -491,6 +486,7 @@ const CircleDiv2_2 = styled.div`
 } 
 @media (min-width: 1200px) and (max-width: 1920px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -513,6 +509,7 @@ const CircleDiv2_2 = styled.div`
 const CircleDiv2_3 = styled.div`
 @media (max-width: 749px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 38px;
   height: 38px;
@@ -533,6 +530,7 @@ const CircleDiv2_3 = styled.div`
 } 
 @media (min-width: 750px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -553,6 +551,7 @@ const CircleDiv2_3 = styled.div`
 } 
 @media (min-width: 1200px) and (max-width: 1920px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -576,6 +575,7 @@ const CircleDiv2_3 = styled.div`
 const CircleDiv2_4 = styled.div`
 @media (max-width: 749px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 38px;
   height: 38px;
@@ -596,6 +596,7 @@ const CircleDiv2_4 = styled.div`
 } 
 @media (min-width: 750px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -616,6 +617,7 @@ const CircleDiv2_4 = styled.div`
 } 
 @media (min-width: 1200px) and (max-width: 1920px){
   display:flex;
+  z-index: 2;
   position: absolute;
   width: 59px;
   height: 59px;
@@ -974,48 +976,72 @@ const TextMent = styled.div`
 
 }
 `
-const Main = () => {
+class Main extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render(){
     return(
-        <div style={{background:'black', overflow:'hidden'}}>
-        <ImageDiv src={logo}/>
-        <TextAniDiv>
-        <TextDiv>우리는 그 자체로 특별하다</TextDiv>
-        <EngDiv><b>N</b>onesuchable <b>P</b>eople who <b>C</b>reates games</EngDiv>
-        </TextAniDiv>
-        <TextAniDiv>
-        <UniDiv><b>동덕여자대학교</b></UniDiv>
-        <Name>게임 개발 동아리 NPC</Name>
-        <TextMent>다양한 분야의 사람들과 협업, 구글 플레이 출시, 스터디 등 다양한 경험을 쌓을 수 있습니다.</TextMent>
-        </TextAniDiv>
-        <CircleDiv>창설년도<CircleText1>2019</CircleText1></CircleDiv>
-        <CircleDiv>누적 기수<CircleText1>7기</CircleText1></CircleDiv>
-        <CircleDiv>누적 동아리원<CircleText1>N명</CircleText1></CircleDiv>
-        <CircleDiv>런칭 게임<CircleText1>N개</CircleText1></CircleDiv>
-        <TextDiv2>다양한 분야의 사람들과 협업, 구글 플레이 출시, 스터디 등 다양한 경험을 쌓을 수 있습니다.</TextDiv2>
-        <TextDiv3>약 1년간 어떤 활동을 하게 되나요?</TextDiv3>
-        <TextDiv4>희망자에 따라 MT, 스터디, 사이드 프로젝트 등 다양한 활동들도 함께할 수 있습니다.</TextDiv4>
-        <RectDiv>신입부원 프로젝트<RectText>약 한달동안 두개 팀으로 나누어져 프로젝트를 진행</RectText></RectDiv>
-        <RectDiv>NPC 해커톤<RectText>교내 학우들과 함께 일주일간 게임 개발, 우수 팀 상장 수여</RectText></RectDiv>
-        <RectDiv>7기 장기 프로젝트<RectText>7기 부원들과 함께 게임을 개발 (7기 부원들도 이루어진 단일 팀 구성)</RectText></RectDiv>
-        <RectDiv>NPC 수료<RectText>장기 프로젝트 마감까지 함께한 동아리원 분들께 수료증 수여</RectText></RectDiv>
-        <TextDiv3>신입부원 프로젝트는 어떻게 진행되나요?</TextDiv3>
-        <LineDetail>
-        <CircleDiv2_1>01</CircleDiv2_1>
-        <CircleDiv2_2>02</CircleDiv2_2>
-        <CircleDiv2_3>03</CircleDiv2_3>
-        <CircleDiv2_4>04</CircleDiv2_4>
-        <ImageLine src={line}/>
-        </LineDetail>
-        <Text1>팀 빌딩</Text1>
-        <Text1_1>기획 담당자의 발표를 듣고 본인이 참여하고 싶은 프로젝트에 참가</Text1_1>
-        <Text2>프로젝트 진행</Text2>
-        <Text2_1>약 한달간 팀원들과 게임을 열심히 개발, 정기회의를 통해 진행상황을 공유하고 질의응답의 시간을 가집니다.</Text2_1>
-        <Text3>최종 제출 / 발표</Text3>
-        <Text3_1>한달동안 열심히 개발한 게임을 기한 내에 제출하고 발표합니다.</Text3_1>
-        <Text4>플레이 스토어 출시</Text4>
-        <Text4_1>프로젝트 최종 보수 + apk 추출 완료하여 플레이스토어에 출시 (개발자 계정 지원)</Text4_1>
-        </div>
-    );
+      <div id="MainDiv" style={{background:'black', overflow:'hidden'}}>
+      <picture>
+      <source srcset="img.webp" type="imag/webp"/>
+      <ImageDiv src={logoAni} />
+      </picture>
+      {/* <ImageDiv src={logo}/> */}
+      <TextDiv className="page">우리는 그 자체로 특별하다</TextDiv>
+      <EngDiv className="page"><b>N</b>onesuchable <b>P</b>eople who <b>C</b>reates games</EngDiv>
+      <UniDiv className="page"><b>동덕여자대학교</b></UniDiv>
+      <Name className="page">게임 개발 동아리 NPC</Name>
+      <TextMent className="page">다양한 분야의 사람들과 협업, 구글 플레이 출시, 스터디 등 다양한 경험을 쌓을 수 있습니다.</TextMent>
+      <CircleDiv className="page" style={{animationDelay:"1s"}}>창설년도<CircleText1>2019</CircleText1></CircleDiv>
+      <CircleDiv className="page" style={{animationDelay:"1.3s"}}>누적 기수<CircleText1>7기</CircleText1></CircleDiv>
+      <CircleDiv className="page" style={{animationDelay:"1.6s"}}>누적 동아리원<CircleText1>N명</CircleText1></CircleDiv>
+      <CircleDiv className="page" style={{animationDelay:"1.9s"}}>런칭 게임<CircleText1>N개</CircleText1></CircleDiv>
+      <TextDiv2 className="page">다양한 분야의 사람들과 협업, 구글 플레이 출시, 스터디 등 다양한 경험을 쌓을 수 있습니다.</TextDiv2>
+      <TextDiv3 className="page">약 1년간 어떤 활동을 하게 되나요?</TextDiv3>
+      <TextDiv4 className="page">희망자에 따라 MT, 스터디, 사이드 프로젝트 등 다양한 활동들도 함께할 수 있습니다.</TextDiv4>
+      <RectDiv className="page" style={{animationDelay:"1s"}} >신입부원 프로젝트<RectText>약 한달동안 두개 팀으로 나누어져 프로젝트를 진행</RectText></RectDiv>
+      <RectDiv className="page" style={{animationDelay:"1.3s"}}>NPC 해커톤<RectText>교내 학우들과 함께 일주일간 게임 개발, 우수 팀 상장 수여</RectText></RectDiv>
+      <RectDiv className="page" style={{animationDelay:"1.6s"}}>7기 장기 프로젝트<RectText>7기 부원들과 함께 게임을 개발 (7기 부원들도 이루어진 단일 팀 구성)</RectText></RectDiv>
+      <RectDiv className="page" style={{animationDelay:"1.9s"}}>NPC 수료<RectText>장기 프로젝트 마감까지 함께한 동아리원 분들께 수료증 수여</RectText></RectDiv>
+      <TextDiv3 className="page">신입부원 프로젝트는 어떻게 진행되나요?</TextDiv3>
+      <LineDetail>
+      <CircleDiv2_1 className="page" style={{animationDelay:"1s"}}>01</CircleDiv2_1>
+      <CircleDiv2_2 className="page" style={{animationDelay:"1s"}}>02</CircleDiv2_2>
+      <CircleDiv2_3 className="page" style={{animationDelay:"1s"}}>03</CircleDiv2_3>
+      <CircleDiv2_4 className="page" style={{animationDelay:"1s"}}>04</CircleDiv2_4>
+      <ImageLine src={line} className="page" style={{animationDelay:"3s"}}/>
+      </LineDetail>
+      <Text1 className="page" style={{animationDelay:"2s"}}>팀 빌딩</Text1>
+      <Text1_1 className="page" style={{animationDelay:"2s"}}>기획 담당자의 발표를 듣고 본인이 참여하고 싶은 프로젝트에 참가</Text1_1>
+      <Text2 className="page" style={{animationDelay:"2s"}}>프로젝트 진행</Text2>
+      <Text2_1 className="page" style={{animationDelay:"2s"}}>약 한달간 팀원들과 게임을 열심히 개발, 정기회의를 통해 진행상황을 공유하고 질의응답의 시간을 가집니다.</Text2_1>
+      <Text3 className="page" style={{animationDelay:"2s"}}>최종 제출 / 발표</Text3>
+      <Text3_1 className="page" style={{animationDelay:"2s"}}>한달동안 열심히 개발한 게임을 기한 내에 제출하고 발표합니다.</Text3_1>
+      <Text4 className="page" style={{animationDelay:"2s"}}>플레이 스토어 출시</Text4>
+      <Text4_1 className="page" style={{animationDelay:"2s"}}>프로젝트 최종 보수 + apk 추출 완료하여 플레이스토어에 출시 (개발자 계정 지원)</Text4_1>
+      </div>
+  );
+  }
+  componentDidMount(){
+    const options = {
+      root: null, // viewport
+      rootMargin: "0px",
+      threshold: 0.25, // 50%가 viewport에 들어와 있어야 callback 실행
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    }, options);
+  
+    const pageList = document.querySelectorAll(".page");
+    pageList.forEach((element) => observer.observe(element));
+  }
 }
 
 export default Main;
