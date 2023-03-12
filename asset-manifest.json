@@ -1,24 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffabb026.css",
-    "main.js": "/static/js/main.4eb9d94c.js",
+    "main.css": "/static/css/main.a0f13e8a.css",
+    "main.js": "/static/js/main.ecefaace.js",
     "static/js/787.c4d8b53b.chunk.js": "/static/js/787.c4d8b53b.chunk.js",
-    "static/media/whisky.PNG": "/static/media/whisky.4884cbadd8043cdc399f.PNG",
-    "static/media/santa.PNG": "/static/media/santa.beeea09d47c2c9b7e83b.PNG",
-    "static/media/remember&recollect.PNG": "/static/media/remember&recollect.fc50fb75a3485895ad2d.PNG",
-    "static/media/summer.PNG": "/static/media/summer.d7685ac3bc1075ce997d.PNG",
-    "static/media/killingtag.PNG": "/static/media/killingtag.fade001a1e5a33479049.PNG",
-    "static/media/bread.PNG": "/static/media/bread.93a09af5fe54b12b678f.PNG",
-    "static/media/land.PNG": "/static/media/land.5a32a32ada4dcf2d7a13.PNG",
-    "static/media/colorme.JPG": "/static/media/colorme.41387ba4e15e09f47e84.JPG",
-    "static/media/npcLogo.png": "/static/media/npcLogo.db4a690611d730fd0a84.png",
+    "static/media/title.webp": "/static/media/title.62a616ffc0371636877d.webp",
+    "static/media/designer_emoji.svg": "/static/media/designer_emoji.d08e69442eff4bd98df8cebcb5660650.svg",
+    "static/media/dev_emoji.svg": "/static/media/dev_emoji.48ba901c2f06953e1c3bd6f50583063a.svg",
+    "static/media/pm_emoji.svg": "/static/media/pm_emoji.f3f4c0956332432fc02e8d27b44175e6.svg",
     "index.html": "/index.html",
-    "main.ffabb026.css.map": "/static/css/main.ffabb026.css.map",
-    "main.4eb9d94c.js.map": "/static/js/main.4eb9d94c.js.map",
+    "static/media/juniorProjectRoad.svg": "/static/media/juniorProjectRoad.740c2ec783229a490b96dea15f12cb0a.svg",
+    "main.a0f13e8a.css.map": "/static/css/main.a0f13e8a.css.map",
+    "main.ecefaace.js.map": "/static/js/main.ecefaace.js.map",
     "787.c4d8b53b.chunk.js.map": "/static/js/787.c4d8b53b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffabb026.css",
-    "static/js/main.4eb9d94c.js"
+    "static/css/main.a0f13e8a.css",
+    "static/js/main.ecefaace.js"
   ]
 }
