@@ -43,7 +43,7 @@ class Nav extends React.Component {
           />
           <Link
             onClick={() => {
-              this.changePage("Home");
+              this.changePage("Schedule");
             }}
             move="모집 일정 및 지원 자격"
           />
