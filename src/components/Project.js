@@ -5,7 +5,6 @@ import Pro5 from "./Pro5";
 import Pro6 from "./Pro6";
 import ProAll from "./ProAll";
 import { Routes, Route, Link } from "react-router-dom";
-import Nav from "./Nav";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -90,7 +89,6 @@ const Project = () => {
 
   return (
     <div>
-      <Nav />
       <TextDiv>프로젝트</TextDiv>
       <ScrollDiv>
         <StyledLink to="/">

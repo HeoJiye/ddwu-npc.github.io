@@ -30,7 +30,6 @@ class App extends React.Component {
 
   changePage = (page) => {
     this.setState({ page });
-    console.log(this.state);
   };
 
   render() {
