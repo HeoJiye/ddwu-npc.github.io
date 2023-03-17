@@ -3,7 +3,7 @@ import npc_logo from "./img/footer/npc_logo.png"
 import instargramIcon from "./img/footer/instargramIcon.png"
 import emailIcon from "./img/footer/emailIcon.png"
 import copyrightIcon from "./img/footer/copyrightIcon.png"
-import "../../css/Promotion/Footer.css";
+import "../styles/Footer.css";
 
 class Footer extends React.Component {
 
