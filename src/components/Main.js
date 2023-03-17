@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import logo from "./img/npcLogo.png";
+
 import line from "./img/Vector 1.png";
 import "./css/useScrollFadeIn.js";
 import logoAni from "./img/logo_ani.webp";

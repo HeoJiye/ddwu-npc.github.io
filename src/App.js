@@ -1,6 +1,7 @@
 import React from "react";
 
 import Nav from "./components/Nav";
+import Footer from "./components/Footer"
 
 import Home from "./components/Main";
 import Project from "./components/Project";
@@ -38,6 +39,7 @@ class App extends React.Component {
       <div id="promotion">
         <Nav changePage={this.changePage}></Nav>
         <div className="content">{page}</div>
+        <Footer></Footer>
       </div>
     );
   }
