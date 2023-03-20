@@ -79,6 +79,8 @@ const Hr = styled.hr`
   border: solid 1px #e8e8e8;
   margin-top: 195px;
   width: 79%;
+  margin-left:auto;
+  margin-right: auto;
 `;
 const QText = styled.div`
   color: #4c88ff;
@@ -117,7 +119,7 @@ const ADetail = styled.div`
 `;
 const Project = () => {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <TextDiv>Q&A</TextDiv>
       <Hr />
       <DetailDiv>
