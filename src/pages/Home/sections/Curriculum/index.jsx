@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MediaQuery from "react-responsive";
 import { curriculumData } from "../../../../config";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 
 import { sectionDisplay, figureRelay } from "../../commons/animation";
 
@@ -38,6 +38,7 @@ class Section extends Component {
   componentDidMount() {
     sectionDisplay(`.${styles.section}`);
     figureRelay(`.${styles.figureLayout}`);
+    // alert(document.querySelector(`.${styles.figureLayout}`));
   }
 }
 

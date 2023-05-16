@@ -9,14 +9,8 @@ class Projects extends React.Component {
   constructor(props) {
     super(props);
 
-    const projects = [];
-    for (const [key, value] of Object.entries(projectData)) {
-      for (const project of value) {
-        projects.push(project);
-      }
-    }
     this.state = {
-      projects,
+      projects: projectData,
       idx: 0,
     };
   }
@@ -36,7 +30,7 @@ class Projects extends React.Component {
       stack.push(
         <img
           viewIdx={idx - this.state.idx}
-          src={project.image}
+          src={project.img}
           style={{ transform: `translate(${move}%, 0)` }}
         />
       );
@@ -47,10 +41,7 @@ class Projects extends React.Component {
     return (
       <div className={styles.section}>
         <div font-size="xlarge">NPC 프로젝트</div>
-        <div font-size="medium">
-          <u>프로젝트 더보기</u>
-          <Icon icon="ph:caret-right-bold" />
-        </div>
+        <div font-size="medium"></div>
         <div>
           <div className={styles.projects}>{projectImgs}</div>
           <div className={styles.arrow}>

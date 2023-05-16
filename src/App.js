@@ -25,7 +25,7 @@ class App extends React.Component {
       <>
         <Nav changePage={this.changePage}></Nav>
         {page}
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </>
     );
   }

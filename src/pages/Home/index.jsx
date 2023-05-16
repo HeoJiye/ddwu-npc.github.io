@@ -53,18 +53,9 @@ class Main extends Component {
       if (flag) return;
       flag = true;
 
-      let scroll = 0;
-      sections.forEach((cur, idx) => {
-        if (idx >= change) return;
-        scroll += cur.clientHeight;
-      });
-
-      this.setState({ page: change });
+      this.setState({ page: Math.max(this.state.page, change) });
       setTimeout(() => (flag = false), 500);
     };
-    window.addEventListener("resize", (e) => window.location.reload());
-
-    changePage();
   }
 }
 
