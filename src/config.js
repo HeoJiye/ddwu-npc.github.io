@@ -177,5 +177,5 @@ export const projectData = [
 
 export const apply = {
   type: "8기",
-  form: "https://docs.google.com/forms/d/e/1FAIpQLSchf-0Dy5ru3EnG534eyluRDBK4oJc9q5DZlzUTJq2Qo-xINg/viewform?usp=sf_link",
+  form: "https://forms.gle/1asRYzFwn66cWRm76",
 };
